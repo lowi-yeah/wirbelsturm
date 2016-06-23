@@ -1,0 +1,8 @@
+---
+classes:
+  - blueflood::service
+
+blueflood::cassandra_host: 'cassandra1'
+# blueflood::cassandra_port: 9160
+# blueflood::elasticsearch_host: '127.0.0.1'
+# blueflood::elasticsearch_port: 9300

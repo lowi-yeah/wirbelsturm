@@ -13,6 +13,7 @@ wirbelsturm_common::ipv6_disable: true
 wirbelsturm_common::ipv6_manage: true
 wirbelsturm_common::manage_ntp: true
 wirbelsturm_common::puppet_package_ensure: '3.3.1-1.el6'
+wirbelsturm_common::java_package_name: 'java-1.8.0-openjdk'
 
 # Kafka
 kafka::config_map:
@@ -26,18 +27,26 @@ kafka::limits_nofile: 65536
 kafka::zookeeper_connect:
   - 'zookeeper1:2181'
 
-# Storm
-storm::package_ensure: '0.9.3-1.miguno'
-storm::zookeeper_servers:
-  - 'zookeeper1'
-storm::nimbus_host: 'nimbus1'
-storm::nimbus_childopts:     '-Xmx256m -Djava.net.preferIPv4Stack=true'
-storm::ui_childopts:         '-Xmx256m -Djava.net.preferIPv4Stack=true'
-storm::supervisor_childopts: '-Xmx256m -Djava.net.preferIPv4Stack=true'
-storm::worker_childopts:     '-Xmx256m -Djava.net.preferIPv4Stack=true'
-storm::supervisor_slots_ports:
-  - 6700
-  - 6701
+# # Storm
+# storm::package_ensure: '0.9.3-1.miguno'
+# storm::zookeeper_servers:
+#   - 'zookeeper1'
+# storm::nimbus_host: 'nimbus1'
+# storm::nimbus_childopts:     '-Xmx256m -Djava.net.preferIPv4Stack=true'
+# storm::ui_childopts:         '-Xmx256m -Djava.net.preferIPv4Stack=true'
+# storm::supervisor_childopts: '-Xmx256m -Djava.net.preferIPv4Stack=true'
+# storm::worker_childopts:     '-Xmx256m -Djava.net.preferIPv4Stack=true'
+# storm::supervisor_slots_ports:
+#   - 6700
+#   - 6701
+
+# Mosquitto
+mosquitto::port: '1883'
+mosquitto::service_manage: true
+
+# Mongodb
+mongodb::port: '27018'
+mongodb::verbose: true
 
 # Supervisord
 supervisor::logfile_maxbytes: '20MB'

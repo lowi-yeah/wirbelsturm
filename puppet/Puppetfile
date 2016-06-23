@@ -1,15 +1,19 @@
-forge 'http://forge.puppetlabs.com'
+forge 'https://forgeapi.puppetlabs.com'
 
 # Hosted on public Puppet Forge
 #
 mod 'puppetlabs/firewall', '1.0.x'
 mod 'puppetlabs/nodejs', '0.2.x'
 mod 'puppetlabs/ntp', '3.0.x'
-mod 'puppetlabs/stdlib', '4.1.x'
+# mod 'puppetlabs/stdlib', '4.1.x'
 mod 'ispavailability/file_concat', '0.1.x'
 
 # Hosted on GitHub.com
 #
+mod 'puppetlabs/stdlib',
+  :git => 'https://github.com/puppetlabs/puppetlabs-stdlib.git',
+  :ref => '24797bb5ad73eb4baee0567282ef2670ed141a5c'
+
 mod 'miguno/diamond',
   :git => 'https://github.com/miguno/puppet-diamond.git',
   :ref => '1.0.2'
@@ -23,11 +27,12 @@ mod 'miguno/kafka',
   :ref => '2.0.3'
 
 mod 'miguno/limits',
-  :git => 'https://github.com/miguno/puppet-limits.git'
+  :git => 'https://github.com/miguno/puppet-limits.git',
+  :ref => '3ed0bdd886272c9ba5745f7b3a6515513e9f98fe'
 
 mod 'jfryman/nginx',
   :git => 'https://github.com/jfryman/puppet-nginx.git',
-  :ref => '5c36913dcda630f5244e0ecc885e3b436973d45a' # dated March 10, 2014
+  :ref => '99217732a0227fb8558460355d776e80d89f6865'
 
 mod 'miguno/redis',
   :git => 'https://github.com/miguno/puppet-redis.git',
@@ -71,3 +76,31 @@ mod 'miguno/wirbelsturm_yumrepos',
 mod 'miguno/zookeeper',
   :git => 'https://github.com/miguno/puppet-zookeeper.git',
   :ref => '1.0.8'
+
+mod 'maestrodev/puppet-maven',
+  :git => 'https://github.com/maestrodev/puppet-maven.git',
+  :ref => 'ddeb7d342a40e3626820f21000a75714488c92f5'
+
+mod 'maestrodev/puppet-maven',
+  :git => 'https://github.com/puppetlabs/puppetlabs-vcsrepo.git',
+  :ref => 'f98e8f0e552addd79974ae4523183639a06142e0'
+
+mod 'lowi-yeah/mosquitto',
+  :git => 'https://github.com/lowi-yeah/puppet-mosquitto.git',
+  :ref => 'bd569415f9725f9a0c99edc86437128b28b3fb67'
+
+mod 'puppetlabs/mongodb',
+  :git => 'https://github.com/puppetlabs/puppetlabs-mongodb.git',
+  :ref => '0.7.0'
+
+mod 'lowi-yeah/blueflood',
+  :git => 'https://github.com/lowi-yeah/puppet-blueflood.git',
+  :ref => '8f34f2e7c98cb89187c82f9346048e49797e643d'
+
+mod 'lowi-yeah/cassandra',
+  :git => 'https://github.com/lowi-yeah/puppet-cassandra.git',
+  :ref => '33f7eac48b6abad7a0ca61231b13f39db15f2509'
+
+  
+
+  
