@@ -32,7 +32,7 @@ mod 'miguno/limits',
 
 mod 'jfryman/nginx',
   :git => 'https://github.com/jfryman/puppet-nginx.git',
-  :ref => '99217732a0227fb8558460355d776e80d89f6865'
+  :ref => 'b58a3f4e0cd3888f63f9db0b2f5a33988cd538ca'
 
 mod 'miguno/redis',
   :git => 'https://github.com/miguno/puppet-redis.git',
