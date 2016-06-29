@@ -89,17 +89,9 @@ mod 'lowi-yeah/mosquitto',
   :git => 'https://github.com/lowi-yeah/puppet-mosquitto.git',
   :ref => 'bd569415f9725f9a0c99edc86437128b28b3fb67'
 
-mod 'puppetlabs/mongodb',
-  :git => 'https://github.com/puppetlabs/puppetlabs-mongodb.git',
-  :ref => '0.7.0'
-
-mod 'lowi-yeah/blueflood',
-  :git => 'https://github.com/lowi-yeah/puppet-blueflood.git',
-  :ref => '8f34f2e7c98cb89187c82f9346048e49797e643d'
-
-mod 'lowi-yeah/cassandra',
-  :git => 'https://github.com/lowi-yeah/puppet-cassandra.git',
-  :ref => '33f7eac48b6abad7a0ca61231b13f39db15f2509'
+mod 'lowi-yeah/rethinkdb',
+  :git => 'https://github.com/lowi-yeah/puppet-rethinkdb.git',
+  :ref => '71cf25ba9402d67d1ec06d3fb80a051275f11dba'
 
   
 
